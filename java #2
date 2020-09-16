@@ -1,0 +1,152 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String [] arr)
+    {
+        Scanner input= new Scanner(System.in);
+        double r= input.nextDouble();
+        Krug ob= new circle(r);
+        System.out.println("r"+ob.diametr(r));
+        System.out.println("l"+ob.dlina(r));
+        System.out.println("s"+ob.Plosh(r));
+        System.out.println("yeeeeep");
+    }
+}
+_______________________________________________________________
+public class circle {
+    private double radius;
+circle(double radius)
+{
+ this.rad=rad;
+}
+    public double getRad() {
+        return rad;
+    }
+
+    public void setRad(double rad) {
+        this.rad = rad;
+    }
+
+    public  double diam (double rad)
+    {
+        return rad*2;
+    }
+    public  double l(double rad)
+    {
+        return 2*Math.PI*rad;
+    }
+    public double S(double rad)
+    {
+        return Math.PI*2rad;
+    }
+}
+_____________________________________________________________
+class Head
+{
+private int iсq;
+private int diam;
+Head(int iсq,int diam)
+{
+    this.diam=diam;
+    this.iq=iсq;
+}
+
+    public int getDiam() {
+        return diam;
+    }
+
+    public int getIq() {
+        return iсq;
+    }
+
+  public void setDiam(int diam) {
+        this.diam = diam;
+    }
+
+    public void setIq(int iq) {
+        this.iсq = iсq;
+    }
+}
+class Leg
+{
+    private double  l;
+    private String name;
+    Leg(double l, String name)
+    {
+        this.l=l;
+        this.name=name;
+    }
+
+    public double getL() {
+        return l;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setL(double l) {
+        this.dlina = l;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+class Hand
+{private double  lh;
+    private String nameh;
+    Hand(double lh, String nameh)
+    {
+        this.lh=lh;
+        this.nameh=nameh;
+    }
+
+    public double getL() {
+        return L;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setL(double l) {
+        this.lh = lh;
+    }
+
+    public void setName(String name) {
+        this.nameh = nameh;
+    }
+}
+
+public class Human
+{
+    Human(int age,String namef,int visota,int iсq,int d,String name)
+    {
+        boshka= new Head(iq,d);
+        nojka= new Leg(d,namef);
+        rujka=new Hand(d,namef);
+        this.age=age;
+    }
+    private Leg nojka;
+    private Head golova;
+    private Hand  rujka;
+    private int  age;
+private void dz(int iсq)
+{
+  if(iсq>5)
+  {
+      System.out.println("Пора на завод");
+  } else
+      {
+
+          System.out.println("Не пора на завод");
+      }
+}
+    public  static void main(String [] arr)
+    {
+        Human ob= new Human(228,"NeDima",1337,1488,2,"Dima");
+        ob.dz(1245);
+    }
+}
+
+
